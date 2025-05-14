@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medestética</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Logo Medestética" /> <div class="logo">Medestética</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#reserva" class="btn-reserva">Reserva Cita</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Bienvenidos a Medestética</h1>
+    <p>Resalta tu belleza natural con nuestros tratamientos especializados.</p>
+    <a href="#reserva" class="btn">Reservar ahora</a>
+  </section>
+
+
+  <section id="galeria" class="galeria">
+  <h2>Galería de Procedimientos</h2>
+  <p>Resultados reales de nuestros tratamientos estéticos.</p>
+  <div class="galeria-grid">
+    <div class="imagen-galeria">
+      <img src="img/antes1.jpg" alt="Antes 1">
+      <img src="img/despues1.jpg" alt="Después 1">
+    </div>
+    <div class="imagen-galeria">
+      <img src="img/antes2.jpg" alt="Antes 2">
+      <img src="img/despues2.jpg" alt="Después 2">
+    </div>
+    <div class="imagen-galeria">
+      <img src="img/antes3.jpg" alt="Antes 3">
+      <img src="img/despues3.jpg" alt="Después 3">
+    </div>
+  </div>
+</section>
+<section id="servicios" class="servicios">
+  <h2>Servicios</h2>
+  <p>Descubre los tratamientos que tenemos para ti.</p>
+  <div class="servicios-grid">
+    <div class="card-servicio">
+      <h3>Hydrafacial</h3>
+      <p>Limpieza profunda, hidratación y rejuvenecimiento facial.</p>
+      <ul>
+        <li>Duración: 45 min</li>
+        <li>Precio: $120</li>
+        <li>Ideal para todo tipo de piel</li>
+      </ul>
+    </div>
+
+    <div class="card-servicio">
+      <h3>Relleno de Labios</h3>
+      <p>Volumen y simetría para unos labios sensuales y naturales.</p>
+      <ul>
+        <li>Duración: 30 min</li>
+        <li>Precio: $180</li>
+        <li>Con ácido hialurónico</li>
+      </ul>
+    </div>
+
+    <div class="card-servicio">
+      <h3>Botox</h3>
+      <p>Suaviza líneas de expresión y previene arrugas profundas.</p>
+      <ul>
+        <li>Duración: 20 min</li>
+        <li>Precio: $150</li>
+        <li>Efecto inmediato y natural</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="contacto" class="contacto">
+  <h2>Contáctanos</h2>
+  <p>Estamos ubicados en Mérida, Yucatán. Escríbenos para agendar tu consulta.</p>
+
+  <div class="contacto-container">
+    <div class="info-contacto">
+      <p><strong>WhatsApp:</strong></p>
+      <a href="https://wa.me/529995693318" target="_blank" class="btn-wsp">Enviar mensaje</a>
+      <br><br>
+      <p><strong>Ubicación:</strong></p>
+      <iframe 
+        src="https://www.google.com/maps?q=Mérida,Yucatán,México&output=embed" 
+        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+<br>
+
+<section id="reserva" class="reserva">
+  <h2>Reserva tu Cita</h2>
+  <p>Selecciona tu fecha y envíanos tu solicitud. Te confirmaremos a la brevedad.</p>
+
+  <form class="form-reserva" action="https://formspree.io/f/mqkrajgj" method="POST">
+    <div class="form-group">
+      <input type="text" name="nombre" placeholder="Tu nombre completo" required />
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Correo electrónico" required />
+    </div>
+    <div class="form-group">
+      <input type="date" name="fecha" required />
+    </div>
+    <div class="form-group">
+      <select name="procedimiento" required>
+        <option value="">Selecciona un procedimiento</option>
+        <option value="Hydrafacial">Hydrafacial</option>
+        <option value="Botox">Botox</option>
+        <option value="Relleno de Labios">Relleno de Labios</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <textarea name="mensaje" placeholder="Comentarios adicionales (opcional)"></textarea>
+    </div>
+    <button type="submit" class="btn">Enviar solicitud</button>
+  </form>
+</section>
+
+
+
+  <div class="social-floating">
+    <a href="https://www.instagram.com/" target="_blank">
+      <img src="img/instagram.jpg" alt="Instagram" />
+    </a>
+    <a href="https://www.tiktok.com/" target="_blank">
+      <img src="img/tiktok.jpg" alt="TikTok" />
+    </a>
+  </div>
+</body>
+</html>
